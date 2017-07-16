@@ -87,9 +87,7 @@ void game() {
     int x = 0, y = 0, lives, quit = 0;
 
     /* Input del numero di vite (tentativi permessi). */
-    do {
-        lives = ui_input_range("Numero di vite [1,5]", 1, 5);
-    } while (lives < 1 || lives > 5);
+    lives = ui_input_range("Numero di vite [1,5]", 1, 5);
 
     do {
         /* Visualizzazione del campo e attesa dell'azione da input. */
